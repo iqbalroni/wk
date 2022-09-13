@@ -1,0 +1,147 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #F9476B;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #FCD4C8;
+}
+
+body {
+    background-color: #FCD4C8;
+    width: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: whitesmoke;
+}
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    margin-top: 100px;
+    width: 40%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #F9476B;
+    padding: 0px 20px;
+}
+
+.card {
+    margin-top: 20px;
+    color: #FCD4C8;
+    width: 50%;
+    height: 150px;
+    border-radius: 10px;
+    background-color: #F9476B;
+    text-align: center;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+h4,
+h1 {
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+
+
+button {
+    cursor: pointer;
+    border: 0;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffc800;
+}
+
+input {
+    margin-top: 5px;
+    color: #32405B;
+    margin-bottom: 15px;
+    width: 60%;
+    border: 0;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #FFFFFF;
+}
+
+input:focus {
+    outline: none;
+}
+
+b {
+    animation: gerak 0.9s linear infinite;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+
+@keyframes gerak {
+
+    0%,
+    100% {
+        margin-right: 1px;
+        font-size: 18px;
+    }
+
+    50% {
+        margin-right: 0;
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:700px) {
+    form {
+        margin-top: 40px;
+        width: 70%;
+    }
+
+    .card {
+        width: 70%;
+    }
+
+    h1 {
+        padding: 0;
+        margin-bottom: 0;
+        font-size: 15px;
+    }
+
+
+
+    h4 {
+        padding: 0;
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+
+    .card {
+        height: 100px;
+        text-align: center;
+        padding: 0px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
